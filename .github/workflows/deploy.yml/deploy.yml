@@ -22,9 +22,12 @@ jobs:
       run: npm install
 
     - name: Build the Angular app
-      run: npm run build -- --output-path=dist --base-href=/
+      run: npm run build -- --output-path=dist/evaluationpanier --base-href=/
+
+    - name: Copy CNAME file
+      run: cp CNAME dist/evaluationpanier/CNAME
 
     - name: Deploy to GitHub Pages
-      run: npx angular-cli-ghpages --dir=dist/evaluation-panier
+      run: npx angular-cli-ghpages --dir=dist/evaluationpanier
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
