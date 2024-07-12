@@ -1,13 +1,16 @@
 {
   "name": "evaluation-panier",
   "version": "0.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
-  },
+  
+"scripts": {
+  "ng": "ng",
+  "start": "ng serve",
+  "build": "ng build",
+  "test": "ng test",
+  "lint": "ng lint",
+  "e2e": "ng e2e",
+  "build:gh-pages": "ng build --prod --output-path dist/evaluationpanier --base-href /evaluation-panier/"
+},
   "private": true,
   "dependencies": {
     "@angular/animations": "^18.0.0",
