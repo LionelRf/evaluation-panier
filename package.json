@@ -9,7 +9,7 @@
   "test": "ng test",
   "lint": "ng lint",
   "e2e": "ng e2e",
-  "build:gh-pages": "ng build --configuration production --output-path dist/evaluationpanier --base-href /evaluation-panier/"
+  "build:gh-pages": "ng build --configuration production --output-path dist/evaluation-panier/browser --base-href /evaluation-panier/"
 },
   "private": true,
   "dependencies": {
